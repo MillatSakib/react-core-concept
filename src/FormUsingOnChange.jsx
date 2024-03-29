@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const FormUsingOnChange = () => {
   const [name, setName] = useState("");
   function handelChange(e) {
-    console.log(e.target.value);
-    setName;
+    // console.log(e.target.value);
+    setName(e.target.value);
   }
   return (
     <div>
@@ -17,6 +17,7 @@ const FormUsingOnChange = () => {
         />
         <button type="submit">Submit</button>
       </form>
+      Hi, {name}
     </div>
   );
 };

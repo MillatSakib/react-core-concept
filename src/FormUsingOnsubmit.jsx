@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FormUsingOnsubmit = () => {
+  const [name, setName] = useState("");
   function handelSubmit(e) {
     e.preventDefault(); //here i write preventDefault for prevent default behavior like load on submit
-
-    console.log(e.target.name.value);
+    setName(e.target.name.value);
+    // console.log(e.target.name.value);
   }
   return (
     <div>
@@ -17,6 +18,7 @@ const FormUsingOnsubmit = () => {
         />
         <button type="submit">Submit</button>
       </form>
+      Hi, {name}
     </div>
   );
 };

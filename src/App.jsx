@@ -2,6 +2,7 @@ import { useState } from "react";
 import viteLogo from "/vite.svg";
 import FormUsingOnsubmit from "./FormUsingOnsubmit";
 import FormUsingOnChange from "./FormUsingOnChange";
+import FormUsingUseref from "./FormUsingUseref";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       </div>
       <div className="flex h-screen items-center justify-center">
         <FormUsingOnChange></FormUsingOnChange>
+      </div>
+      <div className="flex h-screen items-center justify-center">
+        <FormUsingUseref></FormUsingUseref>
       </div>
     </div>
   );
