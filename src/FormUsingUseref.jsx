@@ -11,11 +11,11 @@ const FormUsingUseref = () => {
     let name = nameRef.current.value;
     const mail = mailRef.current.value;
     const pass = passRef.current.value;
-    const str = name.split(" ");
-    name = str[str.length - 1];
-    const pushArr = [name, mail, pass];
-    setPrint(pushArr);
-    nameRef.current.foucus;
+    // const str = name.split(" ");
+    // name = str[str.length - 1];
+    // const pushArr = [name, mail, pass];
+    // setPrint(pushArr);
+    nameRef.current.focus();
 
     // console.log(e.target.name.value);
   }
@@ -29,7 +29,6 @@ const FormUsingUseref = () => {
           className="border-2"
           name="name"
           ref={nameRef}
-          required
         />
 
         <input
@@ -38,7 +37,6 @@ const FormUsingUseref = () => {
           className="border-2"
           name="email"
           ref={mailRef}
-          required
         />
 
         <input
@@ -47,7 +45,6 @@ const FormUsingUseref = () => {
           className="border-2"
           name="password"
           ref={passRef}
-          required
         />
 
         <button type="submit">Submit</button>
